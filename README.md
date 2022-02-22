@@ -1,6 +1,6 @@
  # MVP by Deborah Scordo
 
- This MVP will use Vue to create an online shop.
+ This MVP will use Express, mySQL and Vue to create an online shop.
 
  ## Components
 
