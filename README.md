@@ -16,7 +16,7 @@
 
 ## Database schema
  
-![database schema](/images/drawSQL-export-2022-02-22_10 51.png)
+![database schema](/images/drawSQL-MVP.png)
 
  ## Notes
  _This is a student project that was created at [CodeOp](http://codeop.tech), a full stack development bootcamp in Barcelona._
