@@ -1,16 +1,21 @@
 <template>
-  
+   <div class="App">
+        <Navbar />
+
+        <main class="container">
+            <router-view></router-view>
+        </main>
+        
+    </div>
 </template>
 
 <script>
-import Catalog from "./components/Catalog.vue";
-import PreviousWork from "./components/PreviousWork.vue";
+import Navbar from './components/Navbar';
 
 export default {
 name: "app",
 components: {
-  Catalog,
-  PreviousWork
+  Navbar
 }
 }
 </script>

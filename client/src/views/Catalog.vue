@@ -1,10 +1,10 @@
 <template>
-  
+  <h2>Catalog</h2>
 </template>
 
 <script>
 export default {
-name: "previouswork"
+name: "catalog"
 }
 </script>
 
