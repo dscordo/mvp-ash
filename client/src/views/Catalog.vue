@@ -1,18 +1,18 @@
 <template>
 <div class="Catalog">
   <h2>Catalog</h2>
-   <ul>
-  <template v-for="p in data">
+   <ul v-for="p in data"
+  :key="p.prodid">
     <li v-if="p.status === 'available'">
       {{ p.name }}
     </li>
-  </template>
+  
 </ul>
 </div>
 </template>
 
 <script>
-
+// if "status === 'available'" - display name/type/description
 import Api from '../helpers/Api';
 
 export default {
