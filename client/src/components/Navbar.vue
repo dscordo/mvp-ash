@@ -2,11 +2,6 @@
   <nav>
       <div class="navbar navbar-expand-md navbar-dark">
 
-    <span class="navbar-brand">Ariadna Scordo Handmade</span>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
 
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
@@ -34,5 +29,30 @@ name: 'Navbar'
 </script>
 
 <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(252, 178, 190);
+}
 
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  font-family: 'Sacramento', cursive;
+  font-size: 120%;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: palevioletred;
+}
 </style>
