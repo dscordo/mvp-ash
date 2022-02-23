@@ -3,8 +3,10 @@
 </template>
 
 <script>
+// import Api.js
 export default {
 name: "catalog"
+// async mounted
 }
 </script>
 

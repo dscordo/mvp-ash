@@ -1,9 +1,9 @@
-import Vue from 'vue';
-import Router from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router'
 
-import Catalog from "./views/Catalog";
-import PreviousWork from "./views/PreviousWork";
-import Home from './views/Home';
+import Catalog from "./views/Catalog.vue";
+import PreviousWork from "./views/PreviousWork.vue";
+import Home from './views/Home.vue';
+
 
 
 const routes = [
@@ -22,4 +22,9 @@ const routes = [
 ];
 
 
-export default new Router({ mode: 'history', routes });
+const router = createRouter({
+    history: createWebHistory(),
+    routes,
+  })
+
+export default router;

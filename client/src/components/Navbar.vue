@@ -1,6 +1,6 @@
 <template>
   <nav>
-      <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="navbar navbar-expand-md navbar-dark">
 
     <span class="navbar-brand">Ariadna Scordo Handmade</span>
 
@@ -23,6 +23,7 @@
             </li>
         </ul>
     </div>
+     </div>
   </nav>
 </template>
 
