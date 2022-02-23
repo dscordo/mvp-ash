@@ -2,6 +2,8 @@ const BASE_URL = 'http://localhost:5000';
 
 class Api {
     // Public
+   
+
     static async getProducts() {
         return Api._myFetch( `${BASE_URL}/products` );
     }
@@ -38,3 +40,5 @@ class Api {
         return response;
     }
 }
+
+export default Api;
