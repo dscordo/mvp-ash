@@ -1,7 +1,7 @@
 <template>
   <nav>
       <div class="navbar navbar-expand-md navbar-dark">
-
+      
 
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
@@ -32,13 +32,7 @@ name: 'Navbar'
 </script>
 
 <style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: rgb(252, 178, 190);
-}
+
 
 li {
   float: left;
@@ -50,11 +44,11 @@ li a {
   text-align: center;
   padding: 14px 16px;
   font-family: 'Sacramento', cursive;
-  font-size: 120%;
+  font-size: 150%;
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
+
 li a:hover {
   background-color: palevioletred;
 }

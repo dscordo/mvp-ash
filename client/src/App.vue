@@ -1,12 +1,13 @@
 <template>
    <div class="App">
+     <div class="container">
      <h1>Ariadna Scordo Handmade</h1>
         <Navbar />
 
         <main class="container">
             <router-view></router-view>
         </main>
-        
+        </div>
     </div>
 </template>
 
@@ -29,17 +30,12 @@ components: {
 h1, h2 {
   font-family: 'Sacramento', cursive;
 }
-#App {
-  
-  padding: 10px;
-  font-family: Georgia, 'Times New Roman', Times, serif
-  
-}
+
 
 body {
   background-color: pink;
   color: white;
- margin: 2em;
+  font-family:  Georgia, serif;
 }
 
  

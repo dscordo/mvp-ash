@@ -2,15 +2,15 @@
 <div class="Catalog">
   <h2>Catalog</h2>
    <div class="row">
-      <div class="col-md-3" v-for="p in proddata" :key="p.prodid">
-          <div class="card" v-if="p.status === 'available'">
-             <img :src="p.image" :alt="name" class="card-img-top">
-              <div class="card-body">
-      <h4 class="card-title">{{ p.name }}</h4>
+      <div class="col-md-3 mb-3" v-for="p in proddata" :key="p.prodid">
+        <div class="card" v-if="p.status === 'available'">
+          <img :src="p.image" :alt="name" class="card-img-top, rounded">
+           <div class="card-body">
+      <h4 class="card-title" style="color: pink">{{ p.name }}</h4>
       
-       <div class="card-text">{{ p.type }}</div>
-        <div class="card-text">{{ p.description }}</div>
-        <div class="card-text">{{ p.price }}€</div>
+       <div class="card-subtitle mb-2 text-muted">{{ p.type }}</div>
+        <div class="card-text" style="color: grey">{{ p.description }}</div>
+        <div class="card-text" style="color: grey">{{ p.price }}€</div>
         
         </div>
        </div>
