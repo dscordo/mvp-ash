@@ -39,6 +39,22 @@ class Api {
 
         return response;
     }
+
+
 }
+
+// function makeWhereFromFilters(q) {
+//     let filters = [];
+
+//     if (q.status) {
+//         filters.push(`status = '${q.status}'`);
+//     }
+//     if (q.type) {
+//         filters.push(`type <= ${q.type}`);
+//     }
+
+//     // Return all filters joined by AND
+//     return filters.join(' AND ');
+// }
 
 export default Api;

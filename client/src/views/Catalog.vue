@@ -1,13 +1,12 @@
 <template>
 <div class="Catalog">
   <h2>Catalog</h2>
-   <ul v-for="p in data"
-  :key="p.prodid">
-    <li v-if="p.status === 'available'">
-      {{ p.name }}
-    </li>
+   <div class="row">
+      <div class="col-md-3" v-for="p in proddata" :key="p.prodid">
+      {{ p.name }}, {{ p.type }}, {{ p.description }}, {{ p.status }}
+      </div>
+   </div>
   
-</ul>
 </div>
 </template>
 
@@ -17,13 +16,19 @@ import Api from '../helpers/Api';
 
 export default {
 name: "catalog",
-async setup() {
-  const products = await Api.getProducts();
-  console.log(products.data);
-  let data = products.data;
-  return { products, data }
-}
-  
+data() {
+    return {
+      proddata: []
+    };
+  },
+  async mounted() {
+    let response = await Api.getProducts();
+    if (response.ok) {
+      this.proddata = response.data;
+    } else {
+      console.log('Error in Api.getProducts():', response.error);
+    }
+  }
 }
 </script>
 
