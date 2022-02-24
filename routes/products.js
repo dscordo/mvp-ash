@@ -52,10 +52,10 @@ router.get("/:id", async function(req, res) {
 
 // INSERT a new product into the DB
 router.post("/", async function(req, res) {
-  let { name, type, description, price, status } = req.body;
+  let { name, type, description, image, price, status } = req.body;
   let sql = `
-  INSERT INTO products (name, type, description, price, status)
-  VALUES ('${name}', '${type}', '${description}', '${price}', '${status}')
+  INSERT INTO products (name, type, description, image, price, status)
+  VALUES ('${name}', '${type}', '${description}', '${image}', '${price}', '${status}')
   `;
 
   try {

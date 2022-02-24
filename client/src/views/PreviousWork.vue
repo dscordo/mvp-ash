@@ -4,6 +4,7 @@
       <div class="row">
       <div class="col-md-3" v-for="p in proddata" :key="p.prodid">
           <div class="card" v-if="p.status === 'sold'">
+             <img :src="p.image" :alt="name" class="card-img-top">
               <div class="card-body">
       <h4 class="card-title">{{ p.name }}</h4>
       
