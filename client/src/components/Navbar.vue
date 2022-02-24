@@ -19,6 +19,9 @@
             <li class="nav-item">
                 <router-link class="nav-link" to="/about">About</router-link>
             </li>
+            <li class="nav-item">
+                <router-link class="nav-link" to="/customorder">Custom Order</router-link>
+            </li>
         </ul>
     </div>
      </div>
@@ -44,6 +47,7 @@ li a {
   text-align: center;
   padding: 14px 16px;
   font-family: 'Sacramento', cursive;
+  font-weight: bold;
   font-size: 150%;
   text-decoration: none;
 }

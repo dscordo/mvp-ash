@@ -4,7 +4,7 @@ import Catalog from "./views/Catalog.vue";
 import PreviousWork from "./views/PreviousWork.vue";
 import Home from './views/Home.vue';
 import About from './views/About.vue';
-
+import CustomOrder from './views/CustomOrder.vue';
 
 
 const routes = [
@@ -14,17 +14,21 @@ const routes = [
     },
     { 
         path: '/previouswork', 
-        component: PreviousWork,
-        props: true
+        component: PreviousWork
+        
     },
     { 
         path: '/catalog', 
-        component: Catalog,
-        props: true
+        component: Catalog
+        
     },
     { 
         path: '/about', 
         component: About
+    },
+    { 
+        path: '/customorder', 
+        component: CustomOrder
     }
 ];
 
