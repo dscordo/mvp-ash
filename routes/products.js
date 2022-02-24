@@ -3,20 +3,35 @@ var router = express.Router();
 const db = require("../model/helper")
 
 
-// Get all products + filter
-router.get("/", (req, res) => {
-  let sql = 'SELECT * FROM products'; 
-  // let where = makeWhereFromFilters(req.query); 
-  // Send back the full
+function makeWhereFromFilters(q) {
+    let filters = [];
 
-  db(sql)
-    .then(results => {
-    //   if (where) {
-    //     sql += ` WHERE ${where}`;
-    // }
-      res.send(results.data);
-    })
-    .catch(err => res.status(500).send(err));
+    if (q.status) {
+        filters.push(`status = '${q.status}'`);
+    }
+    if (q.type) {
+        filters.push(`type = '${q.type}'`);
+    }
+
+    // Return all filters joined by AND
+    return filters.join(' AND ');
+}
+
+router.get("/", async function (req, res) {
+  let sql = 'SELECT * FROM products'; 
+  let where = makeWhereFromFilters(req.query); 
+   if (where) {
+    sql += ` WHERE ${where}`;
+    }
+ try {
+  let result = await db(sql);
+ 
+    let products = result.data;
+    res.send(products);
+ }
+ catch (err) {
+  res.status(500).send({ error: err.message });
+}
 });
 
 // GET one product

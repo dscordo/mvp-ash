@@ -3,9 +3,19 @@
   <h2>Catalog</h2>
    <div class="row">
       <div class="col-md-3" v-for="p in proddata" :key="p.prodid">
-      {{ p.name }}, {{ p.type }}, {{ p.description }}, {{ p.status }}
-      </div>
-   </div>
+          <div class="card" v-if="p.status === 'available'">
+              <div class="card-body">
+      <h4 class="card-title">{{ p.name }}</h4>
+      
+       <div class="card-text">{{ p.type }}</div>
+        <div class="card-text">{{ p.description }}</div>
+        <div class="card-text">{{ p.price }}€</div>
+        
+        </div>
+       </div>
+        </div>
+       </div>
+   
   
 </div>
 </template>

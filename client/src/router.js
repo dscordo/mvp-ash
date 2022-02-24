@@ -14,11 +14,13 @@ const routes = [
     },
     { 
         path: '/previouswork', 
-        component: PreviousWork
+        component: PreviousWork,
+        props: true
     },
     { 
         path: '/catalog', 
-        component: Catalog
+        component: Catalog,
+        props: true
     },
     { 
         path: '/about', 
