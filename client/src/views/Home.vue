@@ -1,9 +1,10 @@
 <template>
   <div class="Home">
     <h2>Home</h2>
-    <div class="text-center">
-    <img src="../ASHimages/LogoAriadnaScordohandmade.jpg" class="img-fluid" alt="Ariadna Scordo Handmade logo"/>
+      <div class="text-center">
+    <img src="../ASHimages/assorted.jpeg" class="img-fluid img-thumbnail" alt="assorted works" width="850" height="auto"/>
      </div>
+   
     <p class="lead">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         Tincidunt dui ut ornare lectus sit. Cursus euismod quis viverra nibh. Montes nascetur ridiculus mus mauris vitae ultricies. Sed faucibus turpis in eu mi bibendum neque egestas. 
@@ -25,5 +26,7 @@ export default {
 </script>
 
 <style>
-
+img {
+    margin: 20px;
+}
 </style>

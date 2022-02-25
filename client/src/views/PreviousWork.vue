@@ -1,6 +1,7 @@
 <template> 
 <div class="previous">
   <h2>Previous work</h2>
+
       <div class="row">
       <div class="col-md-3" v-for="p in proddata" :key="p.prodid">
           <div class="card" v-if="p.status === 'sold'">
@@ -25,6 +26,7 @@ import Api from '../helpers/Api';
 
 export default {
 name: "previouswork",
+ 
  data() {
     return {
       proddata: []
