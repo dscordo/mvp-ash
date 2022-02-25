@@ -1,11 +1,11 @@
 <template> 
 <div class="previous">
   <h2>Previous work</h2>
-
+      
       <div class="row">
       <div class="col-md-3" v-for="p in proddata" :key="p.prodid">
           <div class="card" v-if="p.status === 'sold'">
-             <img :src="p.image" :alt="name" class="card-img-top, rounded">
+             <img :src="'http://localhost:5000/images/' + p.image" :alt="p.name" class="card-img-top, rounded">
               <div class="card-body">
       <h4 class="card-title" style="color: pink">{{ p.name }}</h4>
       
@@ -24,6 +24,8 @@
 // if "status === 'sold'" - display name and description
 import Api from '../helpers/Api';
 
+
+
 export default {
 name: "previouswork",
  
@@ -39,7 +41,8 @@ name: "previouswork",
     } else {
       console.log('Error in Api.getProducts():', response.error);
     }
-  }
+  },
+
   
 }
 

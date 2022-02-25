@@ -2,7 +2,7 @@
 <div class="about">
 <h2>About Ariadna Scordo</h2>
   <div>
-    <img src="../ASHimages/LogoAriadnaScordohandmade.jpg" class="rounded float-start img-thumbnail" alt="Ariadna Scordo Handmade logo" width="400" height="auto"/>
+    <img src="http://localhost:5000/images/LogoAriadnaScordohandmade.jpg" class="rounded float-start img-thumbnail" alt="Ariadna Scordo Handmade logo" width="400" height="auto"/>
      </div>
   
  <p class="text-start text-break text-wrap">
