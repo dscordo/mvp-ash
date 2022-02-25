@@ -1,6 +1,6 @@
  # MVP by Deborah Scordo
 
- This MVP will use Express, mySQL and Vue to create an online shop for the business _Ariadna Scordo Handmade_.
+ This MVP will use Express, mySQL and Vue 3 to create an online shop for the business _Ariadna Scordo Handmade_.
 
  ## Components
 
@@ -9,6 +9,7 @@
  - PreviousWork: displays examples of work (already sold/gifted).
  - Catalog: displays products available to purchase.
  - Form for custom order requests (desireable but lower priority).
+ - Admin View component to receive custom orders and upload/update products (desireable but lower priority).
 
 The first two components will use the table "products" and the form will use the table "customorders".
  
@@ -23,11 +24,11 @@ As these components are static they are low priority.
 
 ## Site map
 
-![sitemap](/images/MVP-ASH.png)
+![sitemap](/RMimages/MVP-ASH.png)
 
 ## Database schema
  
-![database schema](/images/drawSQL-MVP.png)
+![database schema](/RMimages/drawSQL-MVP.png)
 
 [API Routes list](https://docs.google.com/document/d/1-EI1td50GBRr9KnBUzMpUGFJmx_3-RltO0dmQZejzo4/edit?usp=sharing)
 
