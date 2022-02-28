@@ -67,6 +67,21 @@ router.post("/", async function(req, res) {
   }
 });
 
+router.delete("/:id", async (req, res) => {
+  let { id } = req.params;
+  try {
+    let result = await db(`SELECT * FROM products WHERE prodid = ${id}`);
+    if (result.data.length === 1) {
+      await db(`DELETE FROM products WHERE prodid = ${id}`);
+      result = await db("SELECT * FROM products");
+      res.send(result.data);
+    } else {
+      res.status(404).send({ error: "Item not found" });
+    }
+  } catch (err) {
+    res.status(500).send({ error: err.message });
+  }
+});
 
 
 
