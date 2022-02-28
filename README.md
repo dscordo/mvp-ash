@@ -37,6 +37,17 @@ As these components are static they are low priority.
 
 [API Routes list](https://docs.google.com/document/d/1-EI1td50GBRr9KnBUzMpUGFJmx_3-RltO0dmQZejzo4/edit?usp=sharing)
 
+## Ideas for Featured Extension Project
+
+a. Add functionality to Custom Order form
+
+- The `customorder` table has already been created for the database (see sql file). You would need to create another file in the routes folder for it.
+- Connect form to POST method.
+- Where will the data from the form be displayed? You could create an "AdminView" component to display the information received or have it sent to an email address.
+- Bonus: add PUT, POST and DELETE methods for `products` table in AdminView component.
+
+b. Add search function in Catalog so potential customers can filter between different types (necklace, bracelet, etc). The GET method in routes/products already includes a filter function. I did some research on this but I wasn't very happy with the solutions I saw. Perhaps you find a better one?
+
 ## Notes
 
  _This is a student project that was created at [CodeOp](http://codeop.tech), a full stack development bootcamp in Barcelona._
