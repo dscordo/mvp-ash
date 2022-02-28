@@ -2,12 +2,14 @@
    <div class="App">
      <div class="container">
      <h1>Ariadna Scordo Handmade</h1>
+     
         <Navbar />
 
         <main class="container">
             <router-view></router-view>
         </main>
         </div>
+        
     </div>
 </template>
 
