@@ -2,8 +2,10 @@
 <div class="Catalog">
   <h2>Catalog</h2>
    <div class="row">
-      <div class="col-md-3" v-for="p in proddata" :key="p.prodid">
-        <div class="card" v-if="p.status === 'available'">
+     <template v-for="p in proddata">
+        <template v-if="p.status === 'available'">
+       <div class="col-4" :key="p.prodid">
+        <div class="card">
           <img :src="p.image" :alt="name" class="card-img-top, rounded">
            <div class="card-body">
       <h4 class="card-title" style="color: pink">{{ p.name }}</h4>
@@ -15,6 +17,8 @@
         </div>
        </div>
         </div>
+        </template>
+     </template>
        </div>
    
   
@@ -22,7 +26,10 @@
 </template>
 
 <script>
-// if "status === 'available'" - display name/type/description
+ /*
+ if "status === 'available'" - display name/type/description
+ note: if your dummy data is using an image from the local folder, you will need to add the path to img src like in PreviousWork.
+*/
 import Api from '../helpers/Api';
 
 export default {
