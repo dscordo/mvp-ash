@@ -3,18 +3,21 @@
   <h2>Previous work</h2>
       
       <div class="row">
-      <div class="col-md-3" v-for="p in proddata" :key="p.prodid">
-          <div class="card" v-if="p.status === 'sold'">
+      <template v-for="p in proddata">
+        <template v-if="p.status === 'sold'">
+          <div class="col-4" :key="p.prodid">
+            <div class="card">
              <img :src="'http://localhost:5000/images/' + p.image" :alt="p.name" class="card-img-top, rounded">
               <div class="card-body">
       <h4 class="card-title" style="color: pink">{{ p.name }}</h4>
       
        <div class="card-subtitle mb-2 text-muted">{{ p.type }}</div>
         <div class="card-text" style="color: grey">{{ p.description }}</div>
-        
+        </div>
         </div>
        </div>
-        </div>
+        </template>
+      </template>
        </div>
   
   </div>
