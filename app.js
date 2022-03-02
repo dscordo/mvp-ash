@@ -5,6 +5,7 @@ var logger = require('morgan');
 const cors = require('cors'); 
 
 var productsRouter = require('./routes/products');
+var customordersRouter = require('./routes/customorders');
 
 
 var app = express();
@@ -19,6 +20,7 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 app.use(express.static('public'));
 
 app.use('/products', productsRouter);
+app.use('/customorders', customordersRouter);
 
 // Anything that doesn't match the above, send back index.html
 app.get("*", (req, res) => {

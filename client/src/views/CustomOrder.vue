@@ -4,14 +4,14 @@
     <p>Check out previous works for ideas.</p>
     <form>
       <div class="form-group">
-    <label for="client-name">Name</label>
-    <input type="text" class="form-control" id="client-name" placeholder="Your full name">
-  </div>
+        <label for="client-name">Name</label>
+        <input type="text" class="form-control" id="client-name" placeholder="Your full name">
+      </div>
       <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
    <div class="form-group">
     <label for="select-type">Select the type of item you would like to order</label>
     <select class="form-control" id="type">
