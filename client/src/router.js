@@ -5,6 +5,7 @@ import PreviousWork from "./views/PreviousWork.vue";
 import Home from './views/Home.vue';
 import About from './views/About.vue';
 import CustomOrder from './views/CustomOrder.vue';
+import AdminView from './views/AdminView.vue';
 
 
 const routes = [
@@ -29,6 +30,10 @@ const routes = [
     { 
         path: '/customorder', 
         component: CustomOrder
+    },
+    { 
+        path: '/adminview', 
+        component: AdminView
     }
 ];
 
