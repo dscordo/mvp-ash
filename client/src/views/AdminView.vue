@@ -1,7 +1,7 @@
 <template>
     <div class="AdminView">
-        <h2>Admin View</h2>
-        <Table>
+        <h2>Admin View - Orders</h2>
+        <table>
             <thead>
                 <tr>
                     <th>id</th>
@@ -22,7 +22,7 @@
             
             </tbody>
 
-        </Table>
+        </table>
 
     </div>
     

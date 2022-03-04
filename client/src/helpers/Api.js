@@ -10,6 +10,7 @@ class Api {
     static async getProductById(id) {
         return Api._myFetch( `${BASE_URL}/products/${id}` );
     }
+
       /**
      * Private!
      **/
@@ -43,34 +44,10 @@ class Api {
     static async getOrders() {
         return Api._myFetch( `${BASE_URL}/customorders` );
     }
-        /**
-     * Private!
-     **/
-         static async _myFetch(url, method = 'GET', body = null) {
-            let options = { method };
-    
-            if (body) {
-                options.headers = { 'Content-Type': 'application/json' },
-                options.body = JSON.stringify(body)
-            }
-    
-            let response;
-            try {
-                response = await fetch(url, options);
-                if (response.ok) {
-                    response.data = await response.json();
-                } else {
-                    response.error = `${response.status}: ${response.statusText}`;
-                }
-            } catch (err) {
-                response = {
-                    ok: false,
-                    error: err.message
-                };
-            }
-    
-            return response;
-        }
+
+    static async addOrder(order) {
+        return Api._myFetch( `${BASE_URL}/customorders`, 'POST', order);
+    }
 
 }
 
