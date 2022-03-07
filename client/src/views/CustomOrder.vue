@@ -14,7 +14,8 @@
           </div>
           <div class="form-group mb-4">
             <label for="select-type">Select the type of item you would like to order</label>
-            <select class="form-control" v-model="order.type" id="type">
+            <select class="form-select" v-model="order.type" id="type">
+              <option value="">choose...</option>
               <option>necklace</option>
               <option>bracelet</option>
               <option>mask holder</option>
@@ -24,7 +25,7 @@
           </div>
           <div class="form-group mb-4">
             <label for="description">Description</label>
-            <input type="text" v-model="order.description" class="form-control" id="description" placeholder="Describe the item you would like to order. Remember to include preferred color scheme, materials, who it's for..">
+            <textarea v-model="order.description" class="form-control" id="description" rows="4" placeholder="Describe the item you would like to order. Remember to include preferred color scheme, materials, who it's for.."></textarea>
           </div>
       <button type="submit" class="btn btn-primary btn-outline-light" style="background-color: palevioletred">Submit</button>
     </form>

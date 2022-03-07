@@ -9,6 +9,7 @@
                     <th>email</th>
                     <th>Type</th>
                     <th>Description</th>
+                    <th>Created at</th>
                 </tr>
             </thead>
             <tbody>
@@ -18,6 +19,7 @@
                     <td>{{o.client_email}}</td>
                     <td>{{o.type}}</td>
                     <td>{{o.description}}</td>
+                    <td>{{ new Date(o.date_created).toLocaleString()}}</td>
                 </tr>
             
             </tbody>

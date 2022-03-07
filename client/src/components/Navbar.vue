@@ -49,9 +49,10 @@ li {
 }
 
 li a {
-  display: block;
+  display: flex;
   color: white;
   text-align: center;
+  align-items: flex-end;
   padding: 14px 16px;
   font-family: 'Sacramento', cursive;
   font-weight: bold;

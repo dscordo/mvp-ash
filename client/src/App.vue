@@ -30,7 +30,10 @@ components: {
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
 h1, h2 {
+  display: flex;
   font-family: 'Sacramento', cursive;
+  justify-content: center;
+  align-items: center;
 }
 
 

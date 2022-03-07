@@ -28,8 +28,15 @@ CREATE TABLE `customorders` (
   `client_email` varchar(255) NOT NULL,
   `type` varchar(255) NOT NULL,
   `description` text NOT NULL,
+  `date_created` datetime NOT NULL,
   PRIMARY KEY (`formid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+DROP TRIGGER IF EXISTS `customorders_date_created`;
+create trigger `customorders_date_created` before INSERT
+  on `customorders`
+  for each row 
+  set new.`date_created` = now();
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
