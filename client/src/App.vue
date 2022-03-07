@@ -1,7 +1,6 @@
 <template>
    <div class="App">
      <div class="container">
-     <h1>Ariadna Scordo Handmade</h1>
      
         <Navbar />
 

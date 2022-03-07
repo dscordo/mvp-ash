@@ -10,6 +10,7 @@
                     <th>Type</th>
                     <th>Description</th>
                     <th>Created at</th>
+                    <th>Order Status</th>
                 </tr>
             </thead>
             <tbody>
@@ -20,6 +21,14 @@
                     <td>{{o.type}}</td>
                     <td>{{o.description}}</td>
                     <td>{{ new Date(o.date_created).toLocaleString()}}</td>
+                    <td>
+                        <select class="form-select-sm">
+                            <option value="">Update...</option>
+                            <option value="Not started">Not started</option>
+                            <option value="In progress">In progress</option>
+                            <option value="Delivered">Delivered</option>
+                        </select>
+                    </td>
                 </tr>
             
             </tbody>
@@ -90,5 +99,11 @@ td {
     margin: 0;
     overflow: visible;
     padding: 0.3em 1em;
+}
+
+.form-select-sm {
+    background-color: #e85ba4ba;
+    color: #ffffff;
+    border: solid 1px #ffffff;
 }
 </style>
