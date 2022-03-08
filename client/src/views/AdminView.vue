@@ -1,6 +1,6 @@
 <template>
     <div class="AdminView">
-        <h2>Admin View - Orders</h2>
+        <h2>- Admin View - Orders -</h2>
         <table>
             <thead>
                 <tr>

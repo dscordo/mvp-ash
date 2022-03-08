@@ -1,10 +1,10 @@
 <template>
 <div class="Catalog">
-  <h2>Catalog</h2>
-   <div class="row">
+  <h2>- Catalog -</h2>
+   <div class="row row-cols-1 row-cols-md-3 g-4">
      <template v-for="p in proddata">
         <template v-if="p.status === 'available'">
-       <div class="col-4" :key="p.prodid">
+       <div class="col" :key="p.prodid">
         <div class="card">
           <img :src="p.image" :alt="name" class="card-img-top, rounded">
            <div class="card-body">
