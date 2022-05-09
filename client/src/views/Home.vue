@@ -6,7 +6,7 @@
                         <h1 class="display-4 text-white">Ariadna Scordo Handmade</h1>
                         <p class="text-white my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quia
                             sequi eius. Quas, totam aliquid. Repudiandae reiciendis vel excepturi ipsa voluptate dicta!</p>
-                        <router-link class="btn me-2 btn-primary" to="/catalog">Catalog</router-link>
+                        <router-link class="btn me-2 btn-outline-light" to="/catalog">Catalog</router-link>
                         <router-link class="btn btn-outline-light" to="/customorder">Custom Order</router-link>
                     </div>
                 </div>
@@ -42,6 +42,10 @@ export default {
     left: 0;
     background-color: rgba(43, 2, 38, 0.55);
     z-index: -1;
+}
+
+.btn {
+    background-color: palevioletred;
 }
 
 </style>

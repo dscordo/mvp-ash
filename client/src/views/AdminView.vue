@@ -1,8 +1,17 @@
 <template>
     <div class="AdminView">
-        <h2>- Admin View - Orders -</h2>
-        <table>
-            <thead>
+        <h1>- Admin View -</h1>
+        <div class="accordion">
+        <div class="accordion-item">
+        
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Orders
+            </button></h2>
+             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+            <table>
+                <thead>
                 <tr>
                     <th>id</th>
                     <th>Name</th>
@@ -33,8 +42,38 @@
             
             </tbody>
 
-        </table>
+            </table>
+            </div>
+        </div>
+            </div>
+            <div class="accordion-item">
+             <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Add product
+            </button>
+         </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+            POST to products table
+            </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Edit products
+      </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        PATCH products table
+        </div>
+        </div>
+  </div>
 
+      
+        
+        </div>
     </div>
     
 </template>
@@ -64,6 +103,11 @@ export default {
 </script>
 
 <style scoped>
+
+.accordion {
+    color: black;
+}
+
 table {
     margin-top: 20px;
     border-collapse: collapse;
