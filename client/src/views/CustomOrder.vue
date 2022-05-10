@@ -4,7 +4,7 @@
     <h5>Why not gift your loved ones something unique?</h5>
     <div class="row">
       <div class="col-lg">
-        <img src="http://localhost:5000/images/assorted.jpeg" class="img-fluid" alt="...">
+        <img src="http://localhost:5000/images/assorted.jpeg" class="img-fluid" alt="two bracelets and three necklaces on display">
       </div>
       <div class="col-lg">
         <form @submit.prevent="handleSubmit">
@@ -32,7 +32,7 @@
                 <label for="description">Description</label>
                 <textarea v-model="order.description" class="form-control" id="description" rows="4" placeholder="Describe the item you would like to order. Remember to include preferred color scheme, materials, who it's for.."></textarea>
               </div>
-          <button type="submit" class="btn btn-primary btn-outline-light" style="background-color: palevioletred">Submit</button>
+          <button type="submit" class="btn btn-lg btn-outline-light">Submit</button>
         </form>
       </div>
     </div>
@@ -86,6 +86,10 @@ h5 {
   align-items: center;
   padding:10px;
   font-size: 26px;
+}
+
+.btn {
+    background-color: palevioletred;
 }
 
 </style>

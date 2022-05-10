@@ -15,7 +15,7 @@
                 <tr>
                     <th>id</th>
                     <th>Name</th>
-                    <th>email</th>
+                    <th>Email</th>
                     <th>Type</th>
                     <th>Description</th>
                     <th>Created at</th>
