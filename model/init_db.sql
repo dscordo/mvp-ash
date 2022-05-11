@@ -93,3 +93,12 @@ VALUES
   ('Adriana Lima', 'adri@gmail.com', 'necklace', 'Black beads and a letter A charm'),
   ('Maria Muñoz', 'mari.m@gmail.com', 'bracelet', 'Red beads'),
   ('David Byrne', 'dbyrne@gmail.com', 'mask holder', 'Black beads');
+
+DROP TABLE if exists users;
+
+CREATE TABLE `users`(
+    `id` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    `name` VARCHAR(100) NOT NULL,
+    `email` VARCHAR(100) NOT NULL,
+    `password` VARCHAR(255) NOT NULL
+);
