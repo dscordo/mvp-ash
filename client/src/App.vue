@@ -33,12 +33,12 @@ h1 {
   font-family: 'Sacramento', cursive;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 
 body {
   background-color: pink;
-  color: white;
   font-family:  Georgia, serif;
   margin: 0;
 }
@@ -49,6 +49,7 @@ h2 {
   justify-content: center;
   align-items: center;
   padding:10px;
+  color: white;
 }
 
  

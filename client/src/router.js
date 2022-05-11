@@ -7,6 +7,7 @@ import About from './views/About.vue';
 import CustomOrder from './views/CustomOrder.vue';
 import AdminView from './views/AdminView.vue';
 import AdminLogin from './views/AdminLogin.vue';
+import Register from './views/Register.vue';
 
 
 const routes = [
@@ -39,6 +40,10 @@ const routes = [
     { 
         path: '/adminlogin', 
         component: AdminLogin
+    },
+    { 
+        path: '/register', 
+        component: Register
     }
 
 ];

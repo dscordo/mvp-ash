@@ -24,6 +24,11 @@ name: "About"
 </script>
 
 <style>
+
+.about {
+  color: white;
+}
+
 img {
     margin: 15px;
 }

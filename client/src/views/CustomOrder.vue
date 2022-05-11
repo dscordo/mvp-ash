@@ -86,8 +86,11 @@ h5 {
   align-items: center;
   padding:10px;
   font-size: 26px;
+   color: white;
 }
-
+label {
+   color: white;
+}
 .btn {
     background-color: palevioletred;
 }
