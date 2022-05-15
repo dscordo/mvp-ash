@@ -4,7 +4,7 @@
    
     <h1 class="h3 mb-3 fw-normal">Register</h1>
     <div class="form-floating">
-      <input v-model="data.name" class="form-control" placeholder="name">
+      <input v-model="data.username" class="form-control" placeholder="username">
       
     </div>
     <div class="form-floating">

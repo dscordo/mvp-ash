@@ -1,4 +1,5 @@
 var express = require('express');
+var createError = require('http-errors');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
@@ -6,7 +7,7 @@ const cors = require('cors');
 
 var productsRouter = require('./routes/products');
 var customordersRouter = require('./routes/customorders');
-
+var authRouter = require('./routes/auth');
 
 var app = express();
 app.use(cors());
@@ -21,6 +22,7 @@ app.use(express.static('public'));
 
 app.use('/products', productsRouter);
 app.use('/customorders', customordersRouter);
+app.use('/', authRouter); 
 
 // Anything that doesn't match the above, send back index.html
 app.get("*", (req, res) => {
