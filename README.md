@@ -2,6 +2,8 @@
 
  This MVP will use Express, mySQL and Vue 3 to create an online shop for the business _Ariadna Scordo Handmade_.
 
+ ![landing page screenshot](/RMimages/ash-screenshot.jpeg)
+
 ## Set up instructions
 
  To initialise the backend server type `npm start` in the terminal.
