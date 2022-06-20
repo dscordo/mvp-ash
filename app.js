@@ -8,6 +8,7 @@ const cors = require('cors');
 var productsRouter = require('./routes/products');
 var customordersRouter = require('./routes/customorders');
 var authRouter = require('./routes/auth');
+var usersRouter = require('./routes/users');
 
 var app = express();
 app.use(cors());
@@ -23,6 +24,7 @@ app.use(express.static('public'));
 app.use('/products', productsRouter);
 app.use('/customorders', customordersRouter);
 app.use('/', authRouter); 
+app.use('/users', usersRouter);
 
 // Anything that doesn't match the above, send back index.html
 app.get("*", (req, res) => {

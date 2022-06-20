@@ -8,6 +8,7 @@ import CustomOrder from './views/CustomOrder.vue';
 import AdminView from './views/AdminView.vue';
 import AdminLogin from './views/AdminLogin.vue';
 import Register from './views/Register.vue';
+import { useAuthStore } from '@/stores';
 
 
 const routes = [
@@ -51,7 +52,20 @@ const routes = [
 
 const router = createRouter({
     history: createWebHistory(),
+    linkActiveClass: 'active',
     routes,
   })
+
+  router.beforeEach(async (to) => {
+    // redirect to login page if not logged in and trying to access a restricted page
+    
+    const authRequired = ['/adminview'];
+    const auth = useAuthStore();
+
+    if (authRequired && !auth.user) {
+        auth.returnUrl = to.fullPath;
+        return '/adminlogin';
+    }
+});
 
 export default router;
