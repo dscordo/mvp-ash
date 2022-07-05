@@ -23,7 +23,9 @@
 </template>
 
 <script>
-import { useAuthStore } from '@/stores';
+import { useAuthStore } from '@/stores/authStore';
+import { useUsersStore } from '@/stores/usersStore';
+import { mapState, mapStores } from 'pinia';
 
 export default {
 name: "AdminLogin",
@@ -34,6 +36,11 @@ data() {
     password: ''
   };
 },
+
+computed:{
+  ...mapState(useAuthStore, useUsersStore)
+},
+
 
 methods: {
 onSubmit(values, { setErrors }) {
